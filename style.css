@@ -1,0 +1,92 @@
+@font-face {
+  font-family: vazir;
+  src: url(Fonts/Vazir.woff);
+}
+@font-face {
+  font-family: vazir-bold;
+  src: url(Fonts/Vazir-Bold.woff);
+}
+:root {
+  --navbar-color: #172b24;
+  --navbar-button-color: #527a5b;
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: vazir;
+    user-select: none;
+}
+body {
+    /* background-color: #F1F5EF; */
+    background-image: url(images.jpg);
+    margin: 0;
+}
+nav {
+    position: fixed;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    gap: 10px;
+    background-color: var(--navbar-color);
+    position:sticky;
+    display: flex;
+    align-items: center;
+    height: 64px;
+    padding-right: 10px;
+}
+a{
+    text-decoration: none;
+    transition: 0.15s ease;
+}
+nav a {
+    background-color: var(--navbar-button-color);
+    color: 	#FFFFFF;
+    border-radius: 12px;
+    font-size: 16px;
+    padding: 10px;
+    font-family: vazir-bold;
+}
+
+p{
+    font-size:120px;
+}
+.logo{
+    width:312px;
+    height:78px;
+    position: absolute;
+    left:0;
+}
+.button-container {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 10px;
+}
+
+.sidebar {
+    width: 125px;
+    background-color: #21644c;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.sidebar a {
+    font-weight: bold;
+    color: white;
+    background-color: #319773;
+    padding: 10px;
+    border-radius: 10px;
+}
+.sidebar a:hover{
+    box-shadow: 0px 5px rgb(16, 47, 25)
+}
+nav a:hover{
+    box-shadow: 0px 5px #000000
+}
+a:hover{
+    font-size: 20px;
+}
